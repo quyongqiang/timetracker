@@ -11,6 +11,7 @@ Things you may want to cover:
 
 * Configuration
 
+
 * Database creation
 
 * Database initialization
@@ -22,6 +23,33 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+* rails c (rails console)
+rails c
+
+
+Project.first
+c2 = Company.new(name: "name_of_company")
+c2.save
+
+p = Project.new
+p.save
+p.name = "Project XYZ"
+p.company = c2
+p.save
+
+u = User.new
+u.fname =
+u.lname =
+u. .. =
+u.save
+
+w = Work.new
+w. .. =
+w.save
+
+
+
 
 
 Please feel free to use a different markup language if you do not plan to run

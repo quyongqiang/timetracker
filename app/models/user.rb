@@ -1,3 +1,6 @@
 class User < ActiveRecord::Base
-  blongs_to :company
+  belongs_to :company
+  has_many :works
+  has_many :projects, :through => :works
+
 end
