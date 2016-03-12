@@ -13,7 +13,7 @@ class Work < ActiveRecord::Base
                                      less_than_or_equal_to: 8 }
 
   def date_is_in_past
-    if datetimeperformed.presenct? && datetimeperformed > Time.now
+    if datetimeperformed.present? && datetimeperformed > Time.now
       errors.add(:datetimeperformed, "can't be in the future")
     end
   end
