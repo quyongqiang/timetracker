@@ -24,33 +24,7 @@ Things you may want to cover:
 
 * ...
 
-* rails console usage
-rails c
 
-
-Project.first
-c2 = Company.new(name: "name_of_company")
-c2.save
-
-p = Project.new
-p.save
-p.name = "Project XYZ"
-p.company = c2
-p.save
-
-u = User.new
-u.fname =
-u.lname =
-u. .. =
-u.save
-
-w = Work.new
-w. .. =
-w.save
-
-Company.all
-u2 = User.find(2)
-u
 
 
 Please feel free to use a different markup language if you do not plan to run

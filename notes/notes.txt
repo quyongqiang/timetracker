@@ -51,3 +51,21 @@ p.delete
 p.valid?
 
 # end of chapter 4 Domain Modelling
+
+
+###  start of chapter 5 , controller
+rails g controller companies
+resources :companies
+create index.html.erb of companies view
+
+# start the server
+rails s
+# access
+localhost:3000/companies
+
+#see routes
+rake routes
+
+
+
+
