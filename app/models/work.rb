@@ -5,7 +5,9 @@ class Work < ActiveRecord::Base
   validates :project, presence: true
   validates :user, presence: true
   validates :datetimeperformed, presence: true
-  validates :date_is_in_past
+
+  # 注意此处为 validate，而不是validates
+  validate :date_is_in_past
   validates :hours, numericality: { only_integer: true,
                                      greater_than: 0, 
                                      less_than_or_equal_to: 8 }
