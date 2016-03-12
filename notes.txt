@@ -50,4 +50,4 @@ p.delete
 
 p.valid?
 
-
+# end of chapter 4 Domain Modelling
