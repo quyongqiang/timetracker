@@ -10,5 +10,9 @@ class User < ActiveRecord::Base
   validates :lname, length: { minimum: 5 }
   validates :company, presence: true
 
+  def to_s
+    "#{fname} #{lname}"
+    
+  end
 
 end
