@@ -1,0 +1,17 @@
+form {
+	margin: 0 0 15px 0;
+}
+
+form label {
+	display: block;
+	font-size: italic;
+}
+
+form input {
+	margin: 4px;
+	padding: 5px;
+}
+
+form select {
+	margin: 9px;
+}
