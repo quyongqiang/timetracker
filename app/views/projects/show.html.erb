@@ -1,10 +1,15 @@
 <h1>projects show</h1>
 <h1><%= @project.name %></h1>
 
-<p>Company: <%= @project.company.name %></p>
 
+<p>Company: <%= @project.company.name %></p>
 <p>Default Rate: <%= @project.default_rate %></p>
 <p>Slug:<%= @project.slug %></p>
+
+<p><%= link_to 'Edit Project', edit_project_path(@project)  %></p>
+
+
+
 
 <% if @project.works.size > 0 %>
 <table>

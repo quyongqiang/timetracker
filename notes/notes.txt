@@ -70,3 +70,7 @@ rake routes
 rails g migration add_slug_to_projects
 
 
+# Question
+how to distinguish the create and edit submit request ?
+ 
+

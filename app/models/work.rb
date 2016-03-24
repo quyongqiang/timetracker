@@ -2,11 +2,11 @@ class Work < ActiveRecord::Base
   belongs_to :project
   belongs_to :user  
 
-  validates :project, presence: true
-  validates :user, presence: true
+  validates :project_id, presence: true
+  validates :user_id, presence: true
   validates :datetimeperformed, presence: true
 
-  # 注意此处为 validate，而不是validates
+  # Attention! here is validate，not validates.
   validate :date_is_in_past
   validates :hours, numericality: { only_integer: true,
                                      greater_than: 0, 
