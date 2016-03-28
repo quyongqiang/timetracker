@@ -1,6 +1,6 @@
 source 'https://ruby.taobao.org'
 
-gem 'devise'
+gem 'devise', '>= 3.5.3'
 gem 'will_paginate'
 gem 'thin'
 
