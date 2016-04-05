@@ -28,6 +28,12 @@
 
 	</div>
 	<div>
+		<%= f.label :user_id %>
+		<!-- the mean of params: name="project[user_id]" , all users, user_id, users' name  -->
+		<%= f.collection_select(:user_id, User.all, :id, :to_s, prompt: true) %>
+
+	</div>
+	<div>
 		<%= f.submit @project.new_record? ? "Create Project" : "Update Project" %>
 	</div>
 <% end %>
