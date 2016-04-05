@@ -4,8 +4,12 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   belongs_to :company
+  
   has_many :works
   has_many :projects, :through => :works
+
+  # 09_01 added
+  has_many :projects
 
   # test
   scope :brian, -> { where("fname == 'Brian'")}

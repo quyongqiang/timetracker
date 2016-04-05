@@ -28,5 +28,10 @@ relphmartinez:
   fname: Ralph
   lname: Martinez
   company: clientinc
-  email: rmartin@example
+  email: rmartin@example.com
 
+chanieltest:
+  fname: chaniel
+  lname: test
+  company: clientinc
+  email: chaniel_test@163.com

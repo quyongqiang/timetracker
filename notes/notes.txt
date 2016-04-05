@@ -73,4 +73,9 @@ rails g migration add_slug_to_projects
 # Question
 how to distinguish the create and edit submit request ?
  
+# Question
+what the difference between Project.first.users and Project.first.user
+
+
+
 
