@@ -5,10 +5,13 @@ class Project < ActiveRecord::Base
   has_many :users, :through => :works
 
   # 09_01 added
-  belongs_to :user
+  #belongs_to :user
+  #11_02 changed
+  belongs_to :owner, class_name: "User"
 
   validates :name, length: { minimum: 5 }
   validates :company_id, presence: true
+  validates :owner_id, presence: true
   validates :default_rate, numericality: { only_integer: true, 
                                             greater_than: 50,
                                             less_than: 10000 }

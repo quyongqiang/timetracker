@@ -9,7 +9,9 @@ class User < ActiveRecord::Base
   has_many :projects, :through => :works
 
   # 09_01 added
-  has_many :projects
+  #has_many :projects
+  # 12_01 changed
+  has_many :projects_owned, :foreign_key => 'owner_id', :class_name => 'Project'
 
   # test
   scope :brian, -> { where("fname == 'Brian'")}
