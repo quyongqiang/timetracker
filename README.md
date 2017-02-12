@@ -10,22 +10,25 @@ Timetracker is a project time tracker web app.
 ### 部署安装
 
 - Ruby version
+```
 2.3.1
-
+```
 - Rails version
+```
 5.0.1
+```
 
 - System dependencies
+```
 sqlite3 
-
-- Database creation
-sqlite3 is the default DB.
+```
 
 - Database initialization
-`rake db:create`
-`rake db:migrate`
-`rake db:fixtures:load`
-
+```
+rake db:create
+rake db:migrate
+rake db:fixtures:load
+```
 
 
 
