@@ -1,6 +1,6 @@
 # Timetracker
 Timetracker is a project time tracker web app.
-
+项目时间管理web app.
 
 ### 主要功能
 - 主要模型：公司、项目、工作
@@ -18,9 +18,6 @@ Timetracker is a project time tracker web app.
 - System dependencies
 sqlite3 
 
-- Configuration
-
-
 - Database creation
 sqlite3 is the default DB.
 
@@ -29,13 +26,6 @@ sqlite3 is the default DB.
 `rake db:migrate`
 `rake db:fixtures:load`
 
-- How to run the test suite
-
-
-- Services (job queues, cache servers, search engines, etc.)
-none
-
-- Deployment instructions
 
 
 
