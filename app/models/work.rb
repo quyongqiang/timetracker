@@ -12,8 +12,12 @@ class Work < ActiveRecord::Base
                                      greater_than: 0, 
                                      less_than_or_equal_to: 8 }
 
-  scope :fullday, -> { where("hours >= 8")}
   scope :recent, -> { where("datetimeperformed > '#{Time.now - 7.days}' ")}
+
+# scope :fullday, -> { where("hours >= 8")}
+  def self.fullday
+    where("hours >= 8")
+  end
 
   def self.recentdays(numdaysago)
     since_date = Time.now - numdaysago.to_i.days
